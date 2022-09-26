@@ -53,3 +53,7 @@ Thus, we can traingulate the rover's location solving the Robot Localization pro
 
 •	As the robot moves, weight calcuation and resampling occurs thus, improving the best guess for robot's location.
 
+
+![Robot_Localization](https://user-images.githubusercontent.com/36999515/192352017-1a8005b5-a559-44ce-9b6e-b55debe7c00f.gif)
+
+
