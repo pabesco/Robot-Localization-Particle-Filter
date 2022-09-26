@@ -4,29 +4,36 @@ Follows the Coursera MOOC
 
 
 # Robot Localization using Particle Filter
-Let's say a robot has been dropped onto a random location on a distant planet or in an uninhabited area. The robot has no GPS signal available but it has a sensors which measure its elevation.
-The robot, however, has the terrain map (geospatial) of the region.
-Robot localization is This problem of finding the robots location is called **"Robot Localization"**.
-Particle Filter is one of the approach to robot localization.
+Imagine a rover on an unknown location on a distant planet or remote area. The rover has no GPS signal and needs to find it's way around.
+
+The rover has two things:
+> The terrain map (geospatial) of the region.
+> Elevation sensors
+
+The challenge of determining the rover's location on the map is called **"Robot Localization"** problem.
+
+Particle Filter is one of the approaches to solving robot localization.
 
 ## Particle Filter
-In the particle filter approach, we spawn number of particles (e.g. 3000) on the terrain map randomly. We assign the centre of mass of these particles as the estimated location for our robot.
+In the particle filter approach, we spawn a large number of particles (e.g. 3000) on the terrain map randomly. 
 
-We then move the robot around on the terrain by moving it forward and providing rotation inputs.
+We assign the centre of mass of these particles as the estimated location for our rover.
 
-As the robot's position changes, the altitude sensor provides output for the robot's elevation.
+We then move the rover around on the terrain by moving providing logitudinal and rotational inputs.
 
-We apply the exact motion to the randomly distributed particles as well on the terrain map. 
+As the eover's position changes, the altitude sensor provides output for the rover's elevation.
 
-Each particle is assigned a corresponding weight based on the error in the particle's elevation and the robot's elevation sensor output. 
+We apply the exact motion to the randomly distributed particles on the terrain map as well. 
 
-Since particles with higher errors are less likely to represent the position of the robot and vice versa, the centre of mass of the particles changes as per the weighted average.
+Each particle is assigned a corresponding weight based on the error between the particle's elevation and the rover's elevation (sensor output). 
 
-Additionally, we also eliminate the particles that move out of the defined region.
+Since particles with higher errors are less likely to represent the position of the rover. The weight associated with each particle varies inversely with the error. Thus, lower error particles contributed higher to the centre of mass determination.
 
-As the robot moves, the effect of particles with lower error get amplified and start homing on to the actual location of the robot.
+Additionally, we also eliminate the particles that move out of the specified region (map).
 
-Thus, we can traingulate the robot's location solving the Robot Localization problem.
+As the robot moves, the effect of particles with lower error get amplified and the centre of mass starts homing on to the actual location of the rover.
+
+Thus, we can traingulate the rover's location solving the Robot Localization problem.
 
 
 ### Comments on Jupyter Notebook
