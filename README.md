@@ -1,5 +1,5 @@
 # Robot-Localization-Particle-Filter
-Follows the [Coursera Guided Project] (https://www.coursera.org/projects/robot-localization-python-particle-filter) 
+Follows the [Coursera Guided Project](https://www.coursera.org/projects/robot-localization-python-particle-filter) 
 
 
 
