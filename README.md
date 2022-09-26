@@ -54,7 +54,9 @@ Thus, we can traingulate the rover's location solving the Robot Localization pro
 •	As the robot moves, weight calcuation and resampling occurs thus, improving the best guess for robot's location.
 
 
-## Robot Control Gif
+## Rover Localization Gif
+
+Rover motion input is given manually.
 
 - Green circle is the actual location of the rover on the terrain map.
 
