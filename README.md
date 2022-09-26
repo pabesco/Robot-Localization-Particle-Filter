@@ -54,6 +54,12 @@ Thus, we can traingulate the rover's location solving the Robot Localization pro
 •	As the robot moves, weight calcuation and resampling occurs thus, improving the best guess for robot's location.
 
 
+## Robot Control Gif
+
+Green circle is the actual location of the rover on the terrain map.
+Blue dots represent the particles.
+Red circle is the estimated position of the rover on the map - Center of Mass of the particles.
+
 ![Robot_Localization](https://user-images.githubusercontent.com/36999515/192352017-1a8005b5-a559-44ce-9b6e-b55debe7c00f.gif)
 
 
