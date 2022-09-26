@@ -29,7 +29,7 @@ As the robot moves, the effect of particles with lower error get amplified and s
 Thus, we can traingulate the robot's location solving the Robot Localization problem.
 
 
-### Comments on Jupyter Notebook **
+### Comments on Jupyter Notebook
 "map.png" has the terrain map. The grayscale image intensity (pixel reading) gives the indicator of terrain height.
 
 •	Keyboard input of Numpad 8,4 and 6 are taken for forward, right and left turn.
